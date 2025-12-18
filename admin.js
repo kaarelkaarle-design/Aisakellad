@@ -1,5 +1,6 @@
 // NB! Supabase klient on juba loodud player.js failis.
 // Siin kasutame sama 'supabase' objekti.
+import { supabase } from "./supabaseClient.js";
 
 // 📖 Modal avamine/sulgemine
 document.getElementById("rulesBtn").addEventListener("click", () => {
@@ -204,6 +205,7 @@ supabase.channel('messages-changes')
     loadMessages();
   })
   .subscribe();
+
 
 
 
